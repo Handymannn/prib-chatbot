@@ -16,7 +16,7 @@ gemini_api_key = st.text_input("Gemini API Key: ", placeholder="Type your API Ke
 model = None  # Initialize model variable
 if gemini_api_key:
     try:
-        genai.configure(api_key="AIzaSyAKsMIpDmjb5Z7ydSkwOmyH4Ebj_K-8l3o")  # Use user-provided API key
+        genai.configure(api_key=" API key ")  # Use user-provided API key
         model = genai.GenerativeModel("gemini-pro")  
         st.success("API Key validated successfully!")
     except Exception as e:
